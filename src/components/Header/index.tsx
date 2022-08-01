@@ -3,7 +3,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 
 import { Container, Wrapper, Input, InputField } from './styles'
 
-export const Header: NextPage = () => {
+export const Header = () => {
   return (
     <Container>
       <Wrapper>

@@ -7,10 +7,11 @@ export const Container = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 0;
 `
 
 export const Wrapper = styled.div`
-  width: min(100%, 124rem);
+  width: min(100%, 112.4rem);
   margin: 8.8rem auto 0;
   display: flex;
   align-items: center;

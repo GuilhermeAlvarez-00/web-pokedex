@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { GlobalSyles } from './styles/global'
+import { GlobalSyles } from '../styles/global'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

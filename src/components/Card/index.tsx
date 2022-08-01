@@ -24,8 +24,8 @@ export const Card: React.FC<PokemonProps> = ({ id, name, image, types }) => {
       </InfoContainer>
 
       <CategoryContainer>
-        {types.map((type) => (
-          <PokemonType category={type.name} />
+        {types.map((type, index) => (
+          <PokemonType key={index} category={type.name} />
         ))}
       </CategoryContainer>
     </Container>

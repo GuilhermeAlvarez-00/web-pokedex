@@ -1,5 +1,3 @@
-import { NextPage } from 'next'
-import { Component } from 'react'
 import { PokemonType } from '../PokemonType'
 
 import { Container, InfoContainer, Info, CategoryContainer } from './styles'

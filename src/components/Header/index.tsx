@@ -1,4 +1,3 @@
-import { NextPage } from 'next'
 import { AiOutlineSearch } from 'react-icons/ai'
 
 import { Container, Wrapper, Input, InputField } from './styles'

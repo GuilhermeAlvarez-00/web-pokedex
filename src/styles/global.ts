@@ -29,6 +29,7 @@ export const GlobalSyles = createGlobalStyle`
 		background-color: var(--black700);
 		color: var(--white);
 		font-family: 'Poppins', sans-serif;
+		background: linear-gradient(var(--red600) 0rem, var(--black700) 33.5rem);
 	 }
 
 	 h1, h2, h3, h4, h5, h6 {

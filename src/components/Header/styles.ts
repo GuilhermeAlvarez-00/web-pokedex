@@ -2,9 +2,6 @@ import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 100%;
-  height: 35.5rem;
-  background: linear-gradient(var(--red600), var(--black700));
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 0;

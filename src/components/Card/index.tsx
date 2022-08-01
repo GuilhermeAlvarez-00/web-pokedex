@@ -1,23 +1,34 @@
 import { NextPage } from 'next'
 import { Component } from 'react'
-import { Category } from '../Category'
+import { PokemonType } from '../PokemonType'
 
 import { Container, InfoContainer, Info, CategoryContainer } from './styles'
 
-export const Card: React.FC = () => {
+type PokemonProps = {
+  id: string
+  name: string
+  image: string
+  types: Array<{
+    name: string
+  }>
+}
+
+export const Card: React.FC<PokemonProps> = ({ id, name, image, types }) => {
   return (
     <Container>
-      <img src="/bulbasaur.png" alt="Imagem do pokemon Bulbasaur" />
+      <img src={image} alt={`Imagem do pokemon ${name[0].toLocaleUpperCase}`} />
 
       <InfoContainer>
-        <Info>
-          <h2>Bulbasaur</h2>
-          <span>#001</span>
+        <Info type={types[0].name}>
+          <h2>{name}</h2>
+          <span>#{id}</span>
         </Info>
       </InfoContainer>
 
       <CategoryContainer>
-        <Category category="grass" />
+        {types.map((type) => (
+          <PokemonType category={type.name} />
+        ))}
       </CategoryContainer>
     </Container>
   )

@@ -4,9 +4,9 @@ interface Props {
   category: string
 }
 
-export const Category: React.FC<Props> = ({ category }: Props) => {
+export const PokemonType: React.FC<Props> = ({ category }: Props) => {
   return (
-    <Container>
+    <Container type={category}>
       <p>{category}</p>
     </Container>
   )

@@ -1,7 +1,13 @@
-import type { AppProps } from 'next/app';
+import type { AppProps } from 'next/app'
+import { GlobalSyles } from './styles/global'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <GlobalSyles />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default MyApp;
+export default MyApp
